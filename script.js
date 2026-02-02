@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', () => {
     // Scroll Reveal Animation
     const observerOptions = {
@@ -137,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener("submit", handleSubmit);
 });
-=======
 document.addEventListener('DOMContentLoaded', () => {
     // Scroll Reveal Animation
     const observerOptions = {
@@ -276,4 +274,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener("submit", handleSubmit);
 });
->>>>>>> cef581b7ff2960d719487f22c50add1446e129b9
