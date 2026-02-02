@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>두성차단문 | 완벽한 방음 & 방풍 시스템</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Doosung Corp Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">홈</a></li>
+                <li><a href="#gallery">갤러리</a></li>
+                <li><a href="#features">특징</a></li>
+                <li><a href="#location">오시는 길</a></li>
+                <li><a href="#contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="container hero-content reveal">
+            <h1>완벽한 고요함,<br>그 이상의 가치</h1>
+            <p>외부의 소음과 바람을 차단하여<br>당신만의 아늑한 공간을 만들어드립니다.<br>최고급 알루미늄 갤러리 차단문, 두성.</p>
+            <a href="#contact" class="cta-button">무료 견적 상담</a>
+        </div>
+    </header>
+
+    </header>
+
+    <!-- Gallery Carousel Section -->
+    <section id="gallery" class="section">
+        <!-- Lightbox (Moved inside Gallery) -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <button class="lightbox-btn prev-lightbox">&#10094;</button>
+            <div class="lightbox-body">
+                <img class="lightbox-content" id="lightbox-img">
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+            </div>
+            <button class="lightbox-btn next-lightbox">&#10095;</button>
+        </div>
+
+        <div class="container">
+            <h2 class="section-title reveal">Installation Gallery</h2>
+            <div class="carousel-container reveal">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="assets/window1.jpg" alt="Shutter Window with Accent"
+                            data-description="세련된 포인트 셔터 (모델 A) - 모던한 블랙 & 퍼플 억센트로 공간에 생동감을 더합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window2.jpg" alt="Blinds Window"
+                            data-description="클래식 블라인드 시스템 (모델 B) - 은은한 채광 조절과 클래식한 디자인이 특징입니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window3.jpg" alt="Sliding Shutter"
+                            data-description="슬라이딩 셔터 윈도우 (모델 C) - 부드러운 개폐감과 완벽한 프라이버시 보호를 제공합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window4.jpg" alt="Blue Light Window"
+                            data-description="무드 라이팅 윈도우 (모델 D) - LED 조명이 내장되어 감성적인 야간 분위기를 연출합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window5.jpg" alt="Checker Shutter"
+                            data-description="체커보드 셔터 디자인 (모델 E) - 블랙 & 화이트의 강렬한 대비로 감각적인 인테리어를 완성합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window6.jpg" alt="Premium Sliding Door"
+                            data-description="프리미엄 슬라이딩 도어 (모델 F) - 넓은 개방감과 우수한 단열 성능을 동시에 만족시킵니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window7.jpg" alt="Compact Window System"
+                            data-description="컴팩트 윈도우 시스템 (모델 G) - 좁은 공간에서도 최고의 효율을 발휘하는 실용적인 디자인입니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window8.jpg" alt="Modern Gray Shutter"
+                            data-description="모던 그레이 셔터 (모델 H) - 차분한 그레이 톤으로 공간에 깊이감을 더해줍니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window9.jpg" alt="Custom Design Window"
+                            data-description="커스텀 디자인 창호 (모델 I) - 고객의 취향을 반영한 맞춤형 설계로 나만의 특별한 공간을 연출합니다.">
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn">&#10094;</button>
+                <button class="carousel-btn next-btn">&#10095;</button>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; color: #888; font-size: 0.9rem;">이미지를 클릭하여 시공 디테일을 확인하세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Why DooSung?</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <h3>탁월한 내구성</h3>
+                    <p>변형이나 부식 걱정 없는 고강도 특수 소재를 사용하여, 오랜 시간이 지나도 처음과 같은 견고함을 유지합니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>혁신적인 경량화</h3>
+                    <p>기존 창호 대비 무게를 획기적으로 줄여 구조적 부담을 최소화하고, 누구나 손쉽게 부드럽게 개폐할 수 있습니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>완벽한 차단 성능</h3>
+                    <p>소음, 외풍, 냉기를 3중으로 완벽하게 차단하여 에너지 효율을 높이고 쾌적한 실내 환경을 제공합니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>간편한 유지보수</h3>
+                    <p>오염에 강한 표면 처리와 손쉬운 부품 분리 구조로 청소와 관리가 매우 편리하여 언제나 깨끗하게 사용할 수 있습니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>뛰어난 방재 기능</h3>
+                    <p>불에 타지 않는 난연 성능과 우수한 방수 설계로 화재 및 침수 등 각종 자연재해로부터 안전을 지켜줍니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>친환경 알루미늄 소재</h3>
+                    <p>100% 재활용 가능한 알루미늄 소재를 사용하여 환경 보호에 기여하며, 유해 물질 없는 안전한 주거 공간을 만듭니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section">
+        <div class="container location-content reveal">
+            <h2 class="section-title">오시는 길</h2>
+            <div class="address-box">
+                <p>인천광역시 남동구 남동대로 150</p>
+                <p> 형제전기지식산업센터 505호 두성</p>
+                <p>운영시간: 월-금 09:00 - 17:00 (주말 휴무)</p>
+            </div>
+            <div class="map-placeholder">
+                <iframe src="https://maps.google.com/maps?q=인천광역시+남동구+남동대로+150&z=15&output=embed" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container reveal">
+            <h2 class="section-title">무료 견적 상담</h2>
+            <p style="margin-bottom: 3rem; color: #666;">상담 내용을 남겨주시면 전문가가 24시간 이내에 상세 견적을 보내드립니다.</p>
+
+            <form id="my-form" class="contact-form" action="https://formspree.io/f/mykjwkll" method="POST">
+                <div class="form-group">
+                    <label>이름</label>
+                    <input type="text" name="이름" placeholder="홍길동" required>
+                </div>
+                <div class="form-group">
+                    <label>연락처</label>
+                    <input type="tel" name="연락처" placeholder="010-1234-5678" required>
+                </div>
+                <div class="form-group">
+                    <label>문의 유형</label>
+                    <select name="문의유형">
+                        <option value="견적문의">견적 문의</option>
+                        <option value="방문상담">방문 상담 신청</option>
+                        <option value="AS접수">A/S 접수</option>
+                        <option value="기타">기타</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>메시지</label>
+                    <textarea name="상담내용" rows="5" placeholder="궁금하신 점이나 시공 원하시는 날짜를 적어주세요."></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="submit-btn">상담 신청하기</button>
+                <p id="form-status"></p>
+            </form>
+            <p style="margin-top: 3rem; font-size: 0.8rem; color: #999;">&copy; 2024 Doosung Corp. All Rights
+                Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doosung Corp | 완벽한 방음 & 방풍 시스템</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Doosung Corp Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">홈</a></li>
+                <li><a href="#gallery">갤러리</a></li>
+                <li><a href="#features">특징</a></li>
+                <li><a href="#location">오시는 길</a></li>
+                <li><a href="#contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="container hero-content reveal">
+            <h1>완벽한 고요함,<br>그 이상의 가치</h1>
+            <p>외부의 소음과 바람을 차단하여<br>당신만의 아늑한 공간을 만들어드립니다.<br>최고급 알루미늄 갤러리 차단문, 두성.</p>
+            <a href="#contact" class="cta-button">무료 견적 상담</a>
+        </div>
+    </header>
+
+    </header>
+
+    <!-- Gallery Carousel Section -->
+    <section id="gallery" class="section">
+        <!-- Lightbox (Moved inside Gallery) -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <button class="lightbox-btn prev-lightbox">&#10094;</button>
+            <div class="lightbox-body">
+                <img class="lightbox-content" id="lightbox-img">
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+            </div>
+            <button class="lightbox-btn next-lightbox">&#10095;</button>
+        </div>
+
+        <div class="container">
+            <h2 class="section-title reveal">Installation Gallery</h2>
+            <div class="carousel-container reveal">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="assets/window1.jpg" alt="Shutter Window with Accent"
+                            data-description="세련된 포인트 셔터 (모델 A) - 모던한 블랙 & 퍼플 억센트로 공간에 생동감을 더합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window2.jpg" alt="Blinds Window"
+                            data-description="클래식 블라인드 시스템 (모델 B) - 은은한 채광 조절과 클래식한 디자인이 특징입니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window3.jpg" alt="Sliding Shutter"
+                            data-description="슬라이딩 셔터 윈도우 (모델 C) - 부드러운 개폐감과 완벽한 프라이버시 보호를 제공합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window4.jpg" alt="Blue Light Window"
+                            data-description="무드 라이팅 윈도우 (모델 D) - LED 조명이 내장되어 감성적인 야간 분위기를 연출합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window5.jpg" alt="Checker Shutter"
+                            data-description="체커보드 셔터 디자인 (모델 E) - 블랙 & 화이트의 강렬한 대비로 감각적인 인테리어를 완성합니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window6.jpg" alt="Premium Sliding Door"
+                            data-description="프리미엄 슬라이딩 도어 (모델 F) - 넓은 개방감과 우수한 단열 성능을 동시에 만족시킵니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window7.jpg" alt="Compact Window System"
+                            data-description="컴팩트 윈도우 시스템 (모델 G) - 좁은 공간에서도 최고의 효율을 발휘하는 실용적인 디자인입니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window8.jpg" alt="Modern Gray Shutter"
+                            data-description="모던 그레이 셔터 (모델 H) - 차분한 그레이 톤으로 공간에 깊이감을 더해줍니다.">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/window9.jpg" alt="Custom Design Window"
+                            data-description="커스텀 디자인 창호 (모델 I) - 고객의 취향을 반영한 맞춤형 설계로 나만의 특별한 공간을 연출합니다.">
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn">&#10094;</button>
+                <button class="carousel-btn next-btn">&#10095;</button>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; color: #888; font-size: 0.9rem;">이미지를 클릭하여 시공 디테일을 확인하세요.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Why DooSung?</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <h3>탁월한 내구성</h3>
+                    <p>변형이나 부식 걱정 없는 고강도 특수 소재를 사용하여, 오랜 시간이 지나도 처음과 같은 견고함을 유지합니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>혁신적인 경량화</h3>
+                    <p>기존 창호 대비 무게를 획기적으로 줄여 구조적 부담을 최소화하고, 누구나 손쉽게 부드럽게 개폐할 수 있습니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>완벽한 차단 성능</h3>
+                    <p>소음, 외풍, 냉기를 3중으로 완벽하게 차단하여 에너지 효율을 높이고 쾌적한 실내 환경을 제공합니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>간편한 유지보수</h3>
+                    <p>오염에 강한 표면 처리와 손쉬운 부품 분리 구조로 청소와 관리가 매우 편리하여 언제나 깨끗하게 사용할 수 있습니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>뛰어난 방재 기능</h3>
+                    <p>불에 타지 않는 난연 성능과 우수한 방수 설계로 화재 및 침수 등 각종 자연재해로부터 안전을 지켜줍니다.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <h3>친환경 알루미늄 소재</h3>
+                    <p>100% 재활용 가능한 알루미늄 소재를 사용하여 환경 보호에 기여하며, 유해 물질 없는 안전한 주거 공간을 만듭니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section">
+        <div class="container location-content reveal">
+            <h2 class="section-title">오시는 길</h2>
+            <div class="address-box">
+                <p>인천광역시 남동구 남동대로 150</p>
+                <p> 형제전기지식산업센터 505호 두성</p>
+                <p>운영시간: 월-금 09:00 - 17:00 (주말 휴무)</p>
+            </div>
+            <div class="map-placeholder">
+                <iframe src="https://maps.google.com/maps?q=인천광역시+남동구+남동대로+150&z=15&output=embed" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container reveal">
+            <h2 class="section-title">무료 견적 상담</h2>
+            <p style="margin-bottom: 3rem; color: #666;">상담 내용을 남겨주시면 전문가가 24시간 이내에 상세 견적을 보내드립니다.</p>
+
+            <form id="my-form" class="contact-form" action="https://formspree.io/f/mykjwkll" method="POST">
+                <div class="form-group">
+                    <label>이름</label>
+                    <input type="text" name="이름" placeholder="홍길동" required>
+                </div>
+                <div class="form-group">
+                    <label>연락처</label>
+                    <input type="tel" name="연락처" placeholder="010-1234-5678" required>
+                </div>
+                <div class="form-group">
+                    <label>문의 유형</label>
+                    <select name="문의유형">
+                        <option value="견적문의">견적 문의</option>
+                        <option value="방문상담">방문 상담 신청</option>
+                        <option value="AS접수">A/S 접수</option>
+                        <option value="기타">기타</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>메시지</label>
+                    <textarea name="상담내용" rows="5" placeholder="궁금하신 점이나 시공 원하시는 날짜를 적어주세요."></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="submit-btn">상담 신청하기</button>
+                <p id="form-status"></p>
+            </form>
+            <p style="margin-top: 3rem; font-size: 0.8rem; color: #999;">&copy; 2024 Doosung Corp. All Rights
+                Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
