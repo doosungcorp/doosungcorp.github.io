@@ -23,6 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.querySelector('.prev-btn');
 
     let currentIndex = 0;
+    const carouselCaption = document.getElementById('carousel-caption');
+
+    // Function to update carousel caption based on currentIndex
+    const updateCarouselCaption = (index) => {
+        const img = slides[index].querySelector('img');
+        if (carouselCaption) carouselCaption.innerText = img.dataset.description || '';
+    };
+
+    // Initialize caption with first slide
+    updateCarouselCaption(0);
 
     const updateCarousel = () => {
         const slideWidth = slides[0].getBoundingClientRect().width;
@@ -32,27 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % slides.length;
         updateCarousel();
+        updateCarouselCaption(currentIndex);
     });
 
     prevBtn.addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         updateCarousel();
+        updateCarouselCaption(currentIndex);
     });
 
     window.addEventListener('resize', updateCarousel);
 
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('lightbox-caption');
     const closeLightbox = document.querySelector('.close-lightbox');
     const prevLightboxBtn = document.querySelector('.prev-lightbox');
     const nextLightboxBtn = document.querySelector('.next-lightbox');
 
-    // Function to update lightbox content based on currentIndex
+    // Function to update lightbox content (image only)
     const updateLightboxContent = (index) => {
         const img = slides[index].querySelector('img');
         lightboxImg.src = img.src;
-        lightboxCaption.innerText = img.dataset.description || '';
     };
 
     slides.forEach((slide, index) => {
