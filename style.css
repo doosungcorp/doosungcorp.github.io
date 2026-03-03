@@ -582,6 +582,16 @@ footer {
         visibility: visible;
     }
 
+    header {
+        align-items: flex-end;
+        padding-bottom: 5rem;
+    }
+
+    header::before {
+        background-size: 100% auto;
+        background-position: top center;
+    }
+
     .hero-content h1 {
         font-size: 3rem;
     }
