@@ -157,7 +157,8 @@ header {
     background: linear-gradient(to bottom, #e0f7fa, #ffffff);
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 120px;
+    /* Increased from 80px to accommodate thicker logo navbar */
 }
 
 header::before {
