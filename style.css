@@ -153,7 +153,8 @@ header::before {
     height: 100%;
     /* Bright, airy window image */
     background: url('assets/hero-bg.jpg') no-repeat center center/cover;
-    opacity: 0.3;
+    opacity: 1;
+    /* Transferred from 0.3 to 1 to remove transparency */
     z-index: 0;
 }
 
