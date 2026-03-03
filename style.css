@@ -583,13 +583,18 @@ footer {
     }
 
     header {
-        align-items: center;
-        padding-bottom: 0;
+        height: auto;
+        min-height: 100vh;
+        align-items: flex-end;
+        padding-bottom: 3rem;
+        background: linear-gradient(to bottom, #dbeff0, #ffffff);
     }
 
     header::before {
-        background-size: 100% 100%;
-        background-position: center center;
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 100%;
     }
 
     .hero-content h1 {
