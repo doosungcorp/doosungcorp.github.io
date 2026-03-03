@@ -210,8 +210,8 @@ header::before {
 }
 
 .carousel-caption {
-    flex: none;
-    /* Let it size to its content */
+    flex: 0 1 auto;
+    /* Allow it to size to its content */
     font-size: 1.2rem;
     color: #333;
     text-align: left;
@@ -219,6 +219,7 @@ header::before {
     line-height: 1.6;
     white-space: nowrap;
     /* Prevent line breaks */
+    padding-left: 2rem;
 }
 
 .carousel-container {
@@ -611,6 +612,7 @@ footer {
         width: 100%;
         text-align: center;
         margin-top: 1rem;
+        padding-left: 0;
         white-space: normal;
         /* Reset nowrap for mobile */
     }
