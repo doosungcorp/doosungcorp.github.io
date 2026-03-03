@@ -587,6 +587,28 @@ footer {
         visibility: visible;
     }
 
+    header {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 100px;
+        /* Start below the navbar */
+    }
+
+    header::before {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        /* Fixed height for image block */
+        background-size: contain;
+    }
+
+    .hero-content {
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
     .hero-content h1 {
         font-size: 3rem;
     }
