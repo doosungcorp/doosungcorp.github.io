@@ -143,7 +143,7 @@ header {
     background: linear-gradient(to bottom, #e0f7fa, #ffffff);
     position: relative;
     overflow: hidden;
-    padding-top: 140px;
+    /* padding-top: 140px; removed to use margin on content instead */
 }
 
 header::before {
@@ -163,6 +163,8 @@ header::before {
 .hero-content {
     position: relative;
     z-index: 1;
+    margin-top: 120px;
+    /* Explicitly pushes content down to avoid navbar overlap */
 }
 
 .hero-content h1 {
