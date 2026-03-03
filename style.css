@@ -522,4 +522,8 @@ footer {
     .carousel-slide img {
         height: 350px;
     }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 }
