@@ -26,6 +26,8 @@ body {
     font-family: var(--font-main);
     line-height: 1.6;
     overflow-x: hidden;
+    word-break: keep-all;
+    /* Keeps Korean words whole instead of breaking mid-word */
 }
 
 h1,
@@ -584,6 +586,10 @@ footer {
         font-size: 3rem;
     }
 
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
     .carousel-slide img {
         height: 350px;
     }
@@ -603,4 +609,25 @@ footer {
         text-align: center;
         margin-top: 1rem;
     }
+
+    .mobile-break {
+        display: block;
+        /* Show br only on mobile */
+    }
+
+    .desktop-break {
+        display: none;
+        /* Hide br on mobile */
+    }
+}
+
+/* Utilities */
+.mobile-break {
+    display: none;
+    /* Hide on desktop by default */
+}
+
+.desktop-break {
+    display: block;
+    /* Show on desktop by default */
 }
